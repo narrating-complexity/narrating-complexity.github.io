@@ -1,7 +1,5 @@
 ---
-title: Voting PCA
 layout: page
-permalink: /voting-pca
 ---
 
 <link href="projection-dashboard.css" rel="stylesheet">

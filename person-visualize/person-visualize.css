@@ -1,0 +1,321 @@
+.decision-tooltip, .session-tooltip, .voter-tooltip{
+    position: fixed;
+    line-height: 1;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+    pointer-events: none;
+    font-size: 12px;
+}
+
+.hyperlink-popup{
+    position: fixed;
+    line-height: 1;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.svg-navigation-button{
+    fill:rgb(221, 221, 221);
+    stroke:rgb(56, 56, 56);
+    stroke-width:1;
+    opacity:0.6
+}
+
+rect.selection0 {
+    cursor: move !important;
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    -khtml-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+    stroke: black;
+    stroke-width: 2px;
+    stroke-opacity: 1;
+    fill: black;
+    fill-opacity: 0.2;
+  }
+
+rect.selection1 {
+    cursor: move !important;
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    -khtml-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+    stroke: #CA0020;
+    stroke-width: 2px;
+    stroke-opacity: 1;
+    fill: #CA0020;
+    fill-opacity: 0.2;
+}
+
+#focus-filter{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #00000061;
+}
+
+.options-frame{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 7px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.svg-frame{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.fullsize-selector{
+    width: 95%;
+    max-width: 400px;
+}
+
+.halfsize-selector{
+    float: right;
+    margin-right: 10px;
+    width: 45%;
+    max-width: 400px;
+}
+
+
+.committee-list-view-cell {
+    display: inline-block;
+    vertical-align:top;
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.arc path {
+    stroke: #fff;
+}
+
+.cell_selected {
+    border: 2px solid #bf3e11;
+}
+
+div.bar-involvements-tooltip, div.vote-overview-tooltip, div.vote-detail-tooltip, div.event-tooltip {
+    line-height: 1;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    pointer-events: none;
+    font-size: 12px;
+}
+
+#canvas-bottom {
+    margin-top: 5px;
+}
+
+#canvas-bottom ul {
+    font-size: 12px;
+}
+
+#canvas-bottom li a {
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.session_class {
+    fill: #f9ccbc;
+    stroke: #f6b098;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.axis text {
+  font-size: 9px;
+}
+
+.axis line,
+.axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis-x path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: #bf3e11;
+  stroke-width: 1.5px;
+}
+
+.dot {
+   fill:  #bf3e11;
+}
+
+.selected {
+    stroke-width: 2px;
+    stroke: #bf3e11;
+}
+
+/* Votes */
+.vote-legend, .vote-proposal-name, .end-label-vote, .session_vote_label {
+    font-size: 11px;
+}
+
+.vote-proposal-name {
+    fill: #5c2334;
+}
+
+.bar-for {
+    fill: #bbb8b2;
+    stroke: #bbb8b2;
+    opacity: 0.2;
+    stroke-opacity: 1.0;
+}
+
+.bar-against {
+    fill: #bbb8b2;
+    stroke: #bbb8b2;
+    opacity: 0.2;
+    stroke-opacity: 1.0;
+}
+
+.vote-bar {
+    fill: #bbb8b2;
+    stroke: #bbb8b2;
+}
+
+.vote-bar2 {
+    fill: #000000;
+    stroke: #000000;
+    opacity: 0.28;
+}
+
+.vote-abstain {
+    fill: #5c5346;
+    stroke: #5c5346;
+}
+
+.vote-uncertain {
+    fill: #717171;
+    stroke: #545454;
+}
+
+.vote-casted-recorded {
+    fill: #bbb8b2;
+    stroke: #bbb8b2;
+    opacity: 1.0;
+}
+
+.vote-casted-for {
+    fill: #bbb8b2;
+    stroke: #bbb8b2;
+    opacity: 1.0;
+}
+
+.vote-casted-against {
+    fill: #bbb8b2;
+    stroke: #bbb8b2;
+    opacity: 1.0;
+}
+
+.vote-casted {
+    opacity: 0;
+}
+
+/* Overview */
+.overview-people {
+    fill: rgb(194, 107, 146);
+    stroke: rgb(159, 66, 107);
+}
+
+.overview-doc {
+    fill: rgb(192, 153, 107);
+    stroke: rgb(158, 116, 65);
+}
+
+.overview-vote, .votes-overview {
+    fill: rgb(151, 107, 174);
+    stroke: rgb(116, 68, 155);
+}
+
+.overview-debate {
+    fill: rgb(75, 128, 194);
+    stroke: rgb(20, 74, 142);
+}
+
+.overview-selected, .event-selected, .overview-vote-selected, .focus-vote-selected,
+.overview-vote-in-committee-selected {
+    stroke-width: 2px;
+    stroke: #bbb8b2;
+}
+
+.focus-vote-in-committee-selected {
+    stroke-width: 2px;
+    stroke:rgba(0, 0, 0, 0.8);
+}
+
+.overview-can-be-selected, .votes-overview-can-be-selected {
+    cursor: pointer;
+}
+
+/* Person event breakdown */
+.person-rect-breakdown-class {
+    fill: rgb(194, 107, 146);
+    stroke: rgb(159, 66, 107);
+    stroke-width: 1px;
+}
+
+.document-rect-breakdown-class {
+    fill: rgb(192, 153, 107);
+    stroke: rgb(158, 116, 65);
+    stroke-width: 1px;
+}
+
+.vote-rect-breakdown-class {
+    fill: rgb(151, 107, 174);
+    stroke: rgb(116, 68, 155);
+    stroke-width: 1px;
+}
+
+.debate-rect-breakdown-class {
+    fill: rgb(75, 128, 194);
+    stroke: rgb(20, 74, 142);
+    stroke-width: 1px;
+}
+
+.divider {
+    stroke: darkgrey;
+    opacity: 0.7;
+    shape-rendering: crispEdges;
+}
+
+.session_label {
+    font: 10px sans-serif;
+    shape-rendering: crispEdges;
+}
+
+.event {
+    cursor: pointer;
+}
