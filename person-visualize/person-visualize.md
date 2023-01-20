@@ -14,7 +14,7 @@ layout: page
 This page contains a demo for visualizing records from people in the United States Fourteenth Amendment & The Civil Rights Act of 1866 Convention data set from the [Quill Project Database](https://www.quillproject.net/overview_3/143).
 The page consists of five main elements: a committee involvement list, a keyword cloud, a relationship map, an event list, and a voting breakdown.
 
-This page shows visualization components using a static sample of the dataset. To access different committees or people, please see [here](https://www.quillproject.net/person_visualize/143/4564).
+This page shows visualization components using a static sample of the dataset, namely referring to Thaddeus Stevens and The House of Representatives. To access different committees or people, please see [here](https://www.quillproject.net/person_visualize/143/4564).
 
 ## Committee Involvement
 
