@@ -25,6 +25,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://narrating-complexity.github.io/"
 github_username:  narrating-complexity
 
+header_pages:
+  - about.md
+
 # Build settings
 theme: minima
 

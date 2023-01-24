@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Tools for visualizing person records
 ---
 
 <link href="person-visualize.css" rel="stylesheet">
@@ -9,12 +10,12 @@ layout: page
 <script src="lib/d3.layout.cloud.js"></script>
 <script src="lib/jquery-3.6.0.min.js"></script>
 
-# Tools for visualizing person records
-
 This page contains a demo for visualizing records from people in the United States Fourteenth Amendment & The Civil Rights Act of 1866 Convention data set from the [Quill Project Database](https://www.quillproject.net/overview_3/143).
 The page consists of five main elements: a committee involvement list, a keyword cloud, a relationship map, an event list, and a voting breakdown.
 
-This page shows visualization components using a static sample of the dataset, namely referring to Thaddeus Stevens and The House of Representatives. To access different committees or people, please see [here](https://www.quillproject.net/person_visualize/143/4564).
+This page shows visualization components using a static sample of person + committee from the dataset, namely Thaddeus Stevens and The House of Representatives. The Quill platform allows interactive selection of different committees or people to visualize, which can be seen [here](https://www.quillproject.net/person_visualize/143/4564).
+
+<br>
 
 ## Committee Involvement
 
@@ -61,7 +62,7 @@ For each committee, we generate a relationship map to show other people that may
     <div class="panel-heading panel-heading-height">
         <div class="pull-left">
             <h3 class="panel-title panel-title-size font-color"><strong><span id="relationships-person-name">Person</span>'s relationships in <span id="relationships-committee-name">committee</span></strong></h3>
-            <p>(Relationship map is an approximation generated with t-SNE. Click on a name to view their Person page.)</p>
+            <!--<p>(Relationship map is an approximation generated with t-SNE. Click on a name to view their Person page.)</p>-->
         </div>
     </div>
     <div class="panel-body">

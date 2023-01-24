@@ -1,16 +1,17 @@
 ---
 layout: page
+title: Tools for projecting voting data using PCA
 ---
 
 <link href="projection-dashboard.css" rel="stylesheet">
 <script src="lib/d3.v5.min.js"></script>
 <script src="lib/ml.min.js"></script>
 
-# Tools for projecting voting data using PCA
-
 This page contains a demo for a dashboard to generate PCA visualizations from voting records. The demo shows congress voting data from the United States Fourteenth Amendment & The Civil Rights Act of 1866 Convention, as seen in the [Quill Project Database](https://www.quillproject.net/overview_3/143).
 
 The dashboard consists of three main elements: a timeline, a scatterplot and a chart.
+
+<br>
 
 ## Timeline
 
@@ -75,6 +76,7 @@ Once you are happy with your selection, you may click the GENERATE PCA button to
 </div>
 
 <br>
+
 ## Scatterplot
 
 The scatterplot is the actual PCA visualization. A PCA projection is a transformation over the original data that aims to encode the maximum possible amount of covariance within each dimension without distortion, as to show trends and correlation between data points as explicitly as possible.
@@ -86,7 +88,6 @@ When a PCA projection is generated, the sidebar will also display the amount of 
     <div class="panel-heading">
         <h3 class="panel-title">Scatterplot settings</h3>
     </div>
-
     <div class="panel-body">
         <span>Display:</span>
         <select class="halfsize-selector" id="selector-projection-display">
@@ -94,29 +95,23 @@ When a PCA projection is generated, the sidebar will also display the amount of 
             <option value="decisions">Decisions with valid votes</option>
         </select>
         <br>
-
         <span>Show comparison sample: </span>
         <input type="checkbox" id="checkbox-show-proj1">
         <br>
-
         <span>Movement display threshold:</span>
         <input type="range" orient="horizontal" min="0" max="99" value="0" class="halfsize-selector" id="slider-movement-threshold">
         <br>
-
         <span>Hide dots below threshold: </span>
         <input type="checkbox" id="checkbox-hide-dots">
         <br>
-
     </div>
 </div>
 
 <div id="scatterplot-canvas" class="svg-frame">
     <svg id="scatterplot-svg"></svg>
-
     <br>
     <span style="margin-left:10px">Amount of variance contained in X axis: </span>
     <span id="xvariance-description" style="background-color: #b3bcdd; color: #000000; font-weight:bold"> </span>
-    
     <br>
     <span style="margin-left:10px; margin-bottom:10px;">Amount of variance contained in Y axis: </span>
     <span id="yvariance-description" style="background-color: #b3bcdd; color: #000000; font-weight:bold"> </span>
@@ -141,7 +136,6 @@ The settings menu allows the selection of different axis for observation, the or
         <div class="panel-heading">
             <h3 class="panel-title">Decision charts settings</h3>
         </div>
-
         <div class="panel-body">
             <span>Show:</span>
             <select id="selector-chart0-type" class="halfsize-selector">
@@ -151,19 +145,16 @@ The settings menu allows the selection of different axis for observation, the or
                 <option value="3"> Total number of votes </option>
             </select>
             <br>
-
             <span>Order by:</span>
             <select id="selector-chart0-order" class="halfsize-selector">
                 <option value="0"> Date </option>
                 <option value="1"> Value </option>
             </select>
             <br>
-
             <br>
             <span>Plot additional graph:</span>
             <input type="checkbox" id="checkbox-show-chart1">
             <br>
-
             <span>Show:</span>
             <select id="selector-chart1-type" class="halfsize-selector" disabled>
                 <option value="0"> Impact on Voter PCA X axis </option>
@@ -172,7 +163,6 @@ The settings menu allows the selection of different axis for observation, the or
                 <option value="3"> Total number of votes </option>
             </select>
             <br>
-
             <span>Order by:</span>
             <select id="selector-chart1-order" class="halfsize-selector" disabled>
                 <option value="0"> Date </option>
