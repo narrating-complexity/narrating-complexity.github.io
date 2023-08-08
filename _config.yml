@@ -26,6 +26,7 @@ url: "https://narrating-complexity.github.io/"
 github_username:  narrating-complexity
 
 header_pages:
+  - publications.md
   - about.md
 
 # Build settings
