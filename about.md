@@ -11,4 +11,4 @@ This project will develop a set of interactive, visual analytics approaches to b
 
 As more emphasis is placed on 'big data' approaches to problems, it is important that we develop new visual languages to help users interrogate large datasets quickly and accurately. At the core of this project is the desire to develop new metaphors and conventions to enhance our understanding of the highly connected world in which we live.
 
-The Narrating Complexity project is funded by the <a href="https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/V028871/1">Engineering and Physical Sciences Research Council</a>.
+<strong>The Narrating Complexity project is funded by the <a href="https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/V028871/1">Engineering and Physical Sciences Research Council</a>.</strong>
