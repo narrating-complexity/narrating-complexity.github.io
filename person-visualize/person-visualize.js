@@ -180,8 +180,6 @@ personVisualize.prototype = {
         personVisualize.variables.secondPersonId = 4501;
         personVisualize.variables.secondPersonName = "Andrew J. Rogers"
 
-        console.log("here?");
-
         personVisualize.prototype.getPersonConventionInvolvements();
         personVisualize.prototype.setupButtons();
     },
@@ -706,7 +704,7 @@ personVisualize.prototype = {
                         .style('opacity', 0);
                 })
                 .on('click', function(an_event) {
-                    window.open(an_event.url, '_blank');
+                    //window.open(an_event.url, '_blank');
                 })
                 .attr('transform', function(an_event, i_event) {
                     var img_str = 'img/' + an_event.icon_file;
@@ -944,109 +942,99 @@ personVisualize.prototype = {
             .text('Vote cast.');
 
 
-        //Person2
-        g_key.append('text')
-            .style('font-size', 11)
-            .attr('y', 47)
-            .attr('x', 130)
-            .text(personVisualize.variables.secondPersonName+':');
-
-        g_key.append('rect')
-            .attr('y', 33)
-            .attr('x', 300)
-            .attr('opacity', 0.25)
-            .attr('fill', '#CA2A02')
-            //.attr('class', 'vote-bar')
-            .attr('width', y.rangeBand())
-            .attr('height', y.rangeBand());
-
-        g_key.append('text')
-            .style('font-size', 11)
-            .attr('y', 47)
-            .attr('x', 322)
-            .text('Participation,');
-
-        g_key.append('rect')
-            .attr('y', 33)
-            .attr('x', 450)
-            .attr('class', 'vote-bar')
-            .attr('width', y.rangeBand())
-            .attr('height', y.rangeBand());
-
-        g_key.append('rect')
-            .attr('y', 33)
-            .attr('x', 450)
-            .attr('width', y.rangeBand())
-            .attr('height', y.rangeBand())
-            .attr('fill', 'url(#diagonalHatch1)');
-
-        g_key.append('text')
-            .style('font-size', 11)
-            .attr('y', 47)
-            .attr('x', 472)
-            .text('Vote cast.');
-
-
-        //Both people
-        g_key.append('text')
-            .style('font-size', 11)
-            .attr('y', 68)
-            .attr('x', 130)
-            .text('Both people:');
-
-        g_key.append('rect')
-            .attr('y', 54)
-            .attr('x', 300)
-            .attr('opacity', 0.25)
-            .attr('fill', '#8A39A2')
-            //.attr('class', 'vote-bar')
-            .attr('width', y.rangeBand())
-            .attr('height', y.rangeBand());
-
-        g_key.append('text')
-            .style('font-size', 11)
-            .attr('y', 68)
-            .attr('x', 322)
-            .text('Participation,');
-
-        g_key.append('rect')
-            .attr('y', 54)
-            .attr('x', 450)
-            .attr('class', 'vote-bar')
-            .attr('width', y.rangeBand())
-            .attr('height', y.rangeBand());
-
-        g_key.append('rect')
-            .attr('y', 54)
-            .attr('x', 450)
-            .attr('width', y.rangeBand())
-            .attr('height', y.rangeBand())
-            .attr('fill', 'url(#diagonalHatch1)');
-
-        g_key.append('rect')
-            .attr('y', 54)
-            .attr('x', 450)
-            .attr('width', y.rangeBand())
-            .attr('height', y.rangeBand())
-            .attr('fill', 'url(#diagonalHatch2)');
-
-        g_key.append('text')
-            .style('font-size', 11)
-            .attr('y', 68)
-            .attr('x', 472)
-            .text('Vote cast.');
-
-        /*
-
-
-
-
-
         if (personVisualize.variables.secondPersonId != -1){
-            
+        //Person2
+            g_key.append('text')
+                .style('font-size', 11)
+                .attr('y', 47)
+                .attr('x', 130)
+                .text(personVisualize.variables.secondPersonName+':');
 
-            
-        }*/
+            g_key.append('rect')
+                .attr('y', 33)
+                .attr('x', 300)
+                .attr('opacity', 0.25)
+                .attr('fill', '#CA2A02')
+                //.attr('class', 'vote-bar')
+                .attr('width', y.rangeBand())
+                .attr('height', y.rangeBand());
+
+            g_key.append('text')
+                .style('font-size', 11)
+                .attr('y', 47)
+                .attr('x', 322)
+                .text('Participation,');
+
+            g_key.append('rect')
+                .attr('y', 33)
+                .attr('x', 450)
+                .attr('class', 'vote-bar')
+                .attr('width', y.rangeBand())
+                .attr('height', y.rangeBand());
+
+            g_key.append('rect')
+                .attr('y', 33)
+                .attr('x', 450)
+                .attr('width', y.rangeBand())
+                .attr('height', y.rangeBand())
+                .attr('fill', 'url(#diagonalHatch1)');
+
+            g_key.append('text')
+                .style('font-size', 11)
+                .attr('y', 47)
+                .attr('x', 472)
+                .text('Vote cast.');
+
+
+            //Both people
+            g_key.append('text')
+                .style('font-size', 11)
+                .attr('y', 68)
+                .attr('x', 130)
+                .text('Both people:');
+
+            g_key.append('rect')
+                .attr('y', 54)
+                .attr('x', 300)
+                .attr('opacity', 0.25)
+                .attr('fill', '#8A39A2')
+                //.attr('class', 'vote-bar')
+                .attr('width', y.rangeBand())
+                .attr('height', y.rangeBand());
+
+            g_key.append('text')
+                .style('font-size', 11)
+                .attr('y', 68)
+                .attr('x', 322)
+                .text('Participation,');
+
+            g_key.append('rect')
+                .attr('y', 54)
+                .attr('x', 450)
+                .attr('class', 'vote-bar')
+                .attr('width', y.rangeBand())
+                .attr('height', y.rangeBand());
+
+            g_key.append('rect')
+                .attr('y', 54)
+                .attr('x', 450)
+                .attr('width', y.rangeBand())
+                .attr('height', y.rangeBand())
+                .attr('fill', 'url(#diagonalHatch1)');
+
+            g_key.append('rect')
+                .attr('y', 54)
+                .attr('x', 450)
+                .attr('width', y.rangeBand())
+                .attr('height', y.rangeBand())
+                .attr('fill', 'url(#diagonalHatch2)');
+
+            g_key.append('text')
+                .style('font-size', 11)
+                .attr('y', 68)
+                .attr('x', 472)
+                .text('Vote cast.');
+        }
 
 
         var focusGroup = svg.append('g')
@@ -1797,11 +1785,11 @@ personVisualize.prototype = {
                 return d.votes;
             })
             .enter()
-            .append("svg:a")
+            /*.append("svg:a")
             .attr("xlink:href", function(d){
                 return d.url;
             })
-            .attr("target", "_blank")
+            .attr("target", "_blank")*/
             .append('text')
             .attr('class', 'vote-proposal-name')
             .attr('id', function(d) {
@@ -2153,7 +2141,7 @@ personVisualize.prototype = {
                 .attr("style","font-size:120%")
                 .append("a")
                     .attr("style",function(d){return "color: "+colorScaleAlly(d.distance_to_selected_person);})
-                    .attr("href",function(d){return "/person_visualize2/"+personVisualize.variables.convention.convention_id+"/"+d.person_id;})
+                    //.attr("href",function(d){return "/person_visualize2/"+personVisualize.variables.convention.convention_id+"/"+d.person_id;})
                     .text(function(d){return d.person_name + " (" + (d.distance_to_selected_person/(maxVotes*4)).toFixed(2) + ")"})
                     .append("br");
 
@@ -2164,7 +2152,7 @@ personVisualize.prototype = {
                 .attr("style","font-size:120%")
                 .append("a")
                     .attr("style",function(d){return "color: "+colorScaleEnemy(d.distance_to_selected_person);})
-                    .attr("href",function(d){return "/person_visualize2/"+personVisualize.variables.convention.convention_id+"/"+d.person_id;})
+                    //.attr("href",function(d){return "/person_visualize2/"+personVisualize.variables.convention.convention_id+"/"+d.person_id;})
                     .text(function(d){return d.person_name + " (" + (d.distance_to_selected_person/(maxVotes*4)).toFixed(2) + ")"})
                     .append("br");
 

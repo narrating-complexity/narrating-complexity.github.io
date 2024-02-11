@@ -13,3 +13,5 @@ This is the index page for applications and demos from the Narrating Complexity 
 [Quill Voting PCA dashboard](voting-pca/voting-pca)
 
 [Quill Person Visualizer](person-visualize/person-visualize)
+
+[Quill Document Visualizer](document-visualize/document-visualize)
