@@ -7,7 +7,7 @@ title: Tools for visualizing document records
 <script src="lib/d3.v5.min.js"></script>
 <script src="lib/jquery-3.6.0.min.js"></script>
 
-This page contains a demo for an interface for visualizing document timelines and relationships between documents, applied to the U.S. Constitutional Convention 1787 (2019) dataset from the [Quill Project Database] (https://www.quillproject.net/overview_3/114).
+This page contains a demo for an interface for visualizing document timelines and relationships between documents, applied to the U.S. Constitutional Convention 1787 (2019) dataset from the [Quill Project Database](https://www.quillproject.net/overview_3/114).
 The interface consists of three components: a global dataset timeline view, a document timeline view, and a text view. 
 
 This page shows visualziation components using a static sample of document + committee data from the dataset, namely one of the amended versions of the Virginia Plan discussed by the Committee of the Whole House. The Quill platform allows interactive selection and navigation between different documents, and can be seen [here](https://www.quillproject.net/document_visualize2/63571).
@@ -104,10 +104,8 @@ This component contains four panels: related documents, a text viewer, and selec
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title" id="document-text-title">Text viewer</h3>
-                <input type="checkbox" id="checkbox-hide-deletions"> Hide removed text </input>
-                <input type="checkbox" id="checkbox-hide-pending"> Hide pending text </input>
-                <input type="checkbox" id="checkbox-hide-rejected"> Hide rejected text </input>
-                <input type="checkbox" id="checkbox-hide-evids"> Hide event references </input>
+                <input type="checkbox" id="checkbox-hide-deletions"> Hide removed text
+                <input type="checkbox" id="checkbox-hide-evids"> Hide event references
             </div>
             <div class="panel-body">
                 <div id="document-text-view" style="overflow-y: scroll; height: 180px">
