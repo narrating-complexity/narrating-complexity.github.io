@@ -774,7 +774,7 @@ documentVisualize.prototype = {
         //14: height of axis + session circles; 28: height of legend
 
         tsvg.attr("width",usableWidth+margin.left+margin.right)
-            .attr("height",height)
+            .attr("height",height);
 
         tsvg.selectAll("*").remove();
 
