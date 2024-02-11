@@ -18,13 +18,11 @@ This page shows visualziation components using a static sample of document + com
 
 This component displays a timeline of the selected document in the context of other documents and sessions occurring in the convention dataset. 
 
-<button id="button-reset-selection" type="button">Reset Selection</button>
-
 <div id="first-row">
     <div id="global-timeline-panel">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title" id="global-timeline-title">Global Timeline</h3>
+                <div class="panel-title" id="global-timeline-title">Global Timeline</div>
                 <!--(Purple bar = accepted proposals, dashed bar = rejected proposals, yellow bar = pending proposals. Yellow icons = new documents created.)
                 (Sessions related to selected document are shown opaque, other sessions are shown faded.) -->
                 <input type="checkbox" id="cb-ov-hide" name="cb-ov-hide">
@@ -46,7 +44,7 @@ This component displays a local timeline for events pertaining a version of a do
     <div id="timeline-panel">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title" id="timeline-title">Timeline</h3>
+                <div class="panel-title" id="timeline-title">Timeline</div>
                 <input type="checkbox" id="cb-tl-collapse" name="cb-tl-collapse">
                 <label for="cb-tl-collapse"> collapse sessions </label><br>
             </div>
@@ -58,6 +56,8 @@ This component displays a local timeline for events pertaining a version of a do
     </div>
 </div>
 
+<button id="button-reset-selection" type="button">Reset Selection</button>
+
 ## Document Text
 
 This component contains four panels: related documents, a text viewer, and selection boxes for people and keywords.
@@ -67,7 +67,7 @@ This component contains four panels: related documents, a text viewer, and selec
     <div id="document-info-panel" style="width: 16%; display: table-cell">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Document Information</h3>
+                <div class="panel-title">Relationships</div>
             </div>
             <div class="panel-body">
                 <div id="document-info-view" style="overflow-y: scroll; height: 200px">
@@ -103,7 +103,7 @@ This component contains four panels: related documents, a text viewer, and selec
     <div id="document-text-panel" style="width:50%; display: table-cell">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title" id="document-text-title">Text viewer</h3>
+                <div class="panel-title" id="document-text-title">Text viewer</div>
                 <input type="checkbox" id="checkbox-hide-deletions"> Hide removed text
                 <input type="checkbox" id="checkbox-hide-evids"> Hide event references
             </div>
@@ -117,7 +117,7 @@ This component contains four panels: related documents, a text viewer, and selec
     <div id="related-people-panel" style="width:16%; display: table-cell">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">People</h3>
+                <div class="panel-title">People</div>
             </div>
             <div class="panel-body">
                 <div id="related-people-view" style="overflow-y: scroll; height: 200px">
@@ -129,7 +129,7 @@ This component contains four panels: related documents, a text viewer, and selec
     <div id="keywords-panel" style="width:16%; display: table-cell">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Keywords</h3>
+                <div class="panel-title">Keywords</div>
             </div>
             <div class="panel-body">
                 <div id="keywords-view" style="overflow-y: scroll; height: 200px">
@@ -139,6 +139,8 @@ This component contains four panels: related documents, a text viewer, and selec
     </div>
 
 </div>
+
+<br>
 
 These tools were designed and implemented by Gabriel Dias Cantareira, Yiwen Xing, and Alfie Abdul-Rahman at King's College London, and partially funded by a grant from Engineering and Physical Sciences Research Council (EP/V028871/1).
 
