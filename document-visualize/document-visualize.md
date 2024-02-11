@@ -144,4 +144,4 @@ This component contains four panels: related documents, a text viewer, and selec
 
 These tools were designed and implemented by Gabriel Dias Cantareira, Yiwen Xing, and Alfie Abdul-Rahman at King's College London, and partially funded by a grant from Engineering and Physical Sciences Research Council (EP/V028871/1).
 
-<script type="text/javascript" src="person-visualize.js"></script>
+<script type="text/javascript" src="document-visualize.js"></script>
