@@ -6,14 +6,14 @@ const DECISION_TYPES = {
 };
 
 const ICON_PATHS = {
-    "DOC_IMPORT" : "/img/icons2/icon-doc-subtype-script-import.svg",
-    "DOC_NEW": "/img/icons2/icon-doc-subtype-script-add.svg",
-    "DOC_COPY": "/img/icons2/icon-doc-subtype-script-amend.svg",
-    "DEC_REFER": "/img/icons2/icon-decision-refer.svg",
-    "DEC_ADOPT": "/img/icons2/icon-decision-adopt.svg",
-    "DEC_REJECT": "/img/icons2/icon-decision-reject.svg",
-    "DEC_DROP": "/img/icons2/icon-decision-drop.svg",
-    "DEC_FORWARD": "/img/icons2/icon-decision-forward.svg",
+    "DOC_IMPORT" : "img/icons2/icon-doc-subtype-script-import.svg",
+    "DOC_NEW": "img/icons2/icon-doc-subtype-script-add.svg",
+    "DOC_COPY": "img/icons2/icon-doc-subtype-script-amend.svg",
+    "DEC_REFER": "img/icons2/icon-decision-refer.svg",
+    "DEC_ADOPT": "img/icons2/icon-decision-adopt.svg",
+    "DEC_REJECT": "img/icons2/icon-decision-reject.svg",
+    "DEC_DROP": "img/icons2/icon-decision-drop.svg",
+    "DEC_FORWARD": "img/icons2/icon-decision-forward.svg",
 }
 
 var documentVisualize = {};
