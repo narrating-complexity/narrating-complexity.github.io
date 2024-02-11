@@ -1,7 +1,4 @@
----
-layout: page
-title: Tools for visualizing document records
----
+
 
 <link href="document-visualize.css" rel="stylesheet">
 <script src="lib/d3.v5.min.js"></script>
@@ -14,11 +11,13 @@ This page shows visualziation components using a static sample of document + com
 
 <br>
 
-## Global Dataset Timeline
+Global Dataset Timeline <br>
 
 This component displays a timeline of the selected document in the context of other documents and sessions occurring in the convention dataset. 
 
 <button id="button-reset-selection" type="button">Reset Selection</button>
+
+<br>
 
 <div id="first-row">
     <div id="global-timeline-panel">
@@ -31,14 +30,14 @@ This component displays a timeline of the selected document in the context of ot
                 <label for="cb-ov-hide"> hide overview </label><br>
             </div>
             <div class="panel-body">
-                <div id="global-timeline-view" style="width:100%; display:inline-block;">
+                <div id="global-timeline-view"style="width:100%; display:inline-block;">
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-## Document Timeline
+Document Timeline <br>
 
 This component displays a local timeline for events pertaining a version of a document discussed by a given committee.
 
@@ -51,14 +50,14 @@ This component displays a local timeline for events pertaining a version of a do
                 <label for="cb-tl-collapse"> collapse sessions </label><br>
             </div>
             <div class="panel-body">
-                <div id="timeline-view" style="width:100%; display:inline-block;">
+                <div id="timeline-view"style="width:100%; display:inline-block;">
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-## Document Text
+Document Text <br>
 
 This component contains four panels: related documents, a text viewer, and selection boxes for people and keywords.
 
