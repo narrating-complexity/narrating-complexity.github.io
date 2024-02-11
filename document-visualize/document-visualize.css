@@ -1,0 +1,86 @@
+.font-color {
+
+}
+
+.document_text{
+  font-size: 12px;
+}
+
+.quill-diff-insert .document_text{
+  background-color: rgba(50, 115, 220,0.0);
+}
+
+.quill-diff-delete {
+  color: grey;
+  
+}
+
+.quill-diff-delete .document_text {
+  text-decoration: line-through;
+  background-color: rgba(220,20,60,0.3);
+}
+
+.quill-diff-rejected .document_text {
+  background-color: rgba(180,20,220,0.3);
+}
+
+.quill-diff-pending .document_text {
+  background-color: rgba(220,180,20,0.3);
+}
+
+.quill-diff-explain{
+  position: relative; top: -0.5em; font-size: 70%;
+  text-decoration: none;
+}
+
+.panel-heading-height {
+    height: 65px;
+}
+.panel-title-size {
+    font-size: 22px;
+}
+
+path.domain {
+    fill: none;
+    stroke: slategray;
+    shape-rendering: crispEdges;
+}
+
+.tl-navigation-button{
+    fill:rgb(221, 221, 221);
+    stroke:rgb(56, 56, 56);
+    stroke-width:1;
+    opacity:0.6
+}
+
+.tooltip{
+    position: fixed;
+    line-height: 1;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+    pointer-events: none;
+    font-size: 12px;
+    max-width: 400px;
+}
+
+.context-popup{
+    position: fixed;
+    line-height: 1;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.context-popup .context-popup-option{
+    padding: 5px;
+}
+
+#focus-filter{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #00000061;
+}
